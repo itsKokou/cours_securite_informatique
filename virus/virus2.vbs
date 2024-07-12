@@ -1,0 +1,1 @@
+x=msgbox("Le message d’erreur est ici", 50, "Le titre de l’erreur est ici")

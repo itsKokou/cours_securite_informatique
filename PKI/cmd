@@ -1,0 +1,234 @@
+Last login: Fri Oct  6 09:51:35 on ttys000
+mac@MacBook-Pro-de-Mac ~ % cd Desktop/ISM/22-23 
+mac@MacBook-Pro-de-Mac 22-23 % ls
+ExamenCryptologie L3.doc
+ExamenCryptologie L3.pdf
+ExamenRattrapage L3.pdf
+Introduction SSI .pdf
+IntroductionSSI.pdf
+notes
+mac@MacBook-Pro-de-Mac 22-23 % cd ../
+mac@MacBook-Pro-de-Mac ISM % cd 23-24 
+mac@MacBook-Pro-de-Mac 23-24 % ls
+051023
+ExposerSécuritéSI.docx
+LIAGE CDSD
+Sujets des exposer.docx
+chapitre 0  IntroductionSSI.pdf
+mac@MacBook-Pro-de-Mac 23-24 % md GLARS
+zsh: command not found: md
+mac@MacBook-Pro-de-Mac 23-24 % mkdir GLARS
+mac@MacBook-Pro-de-Mac 23-24 % cd GLARS 
+mac@MacBook-Pro-de-Mac GLARS % mkdir PKI  
+mac@MacBook-Pro-de-Mac GLARS % cd PKI 
+mac@MacBook-Pro-de-Mac PKI % ls
+mac@MacBook-Pro-de-Mac PKI % openssl genrsa -out clekhalipha.pem 2048
+Generating RSA private key, 2048 bit long modulus
+................................................................................................................................+++
+...+++
+e is 65537 (0x10001)
+mac@MacBook-Pro-de-Mac PKI % ls
+clekhalipha.pem
+mac@MacBook-Pro-de-Mac PKI % openssl rsa -in clekhalipha.pem -text -noout 
+Private-Key: (2048 bit)
+modulus:
+    00:cf:9d:0e:be:46:78:5c:65:bb:d3:e6:40:1e:15:
+    52:b8:a7:f8:bf:3d:ff:b8:c0:f4:29:cb:54:df:de:
+    fc:77:e2:44:b1:d9:e2:36:59:5c:01:14:79:3a:bc:
+    f2:59:fc:2d:42:93:06:90:94:f3:e4:5b:be:fa:0e:
+    d6:47:d8:9d:bc:d5:97:08:d8:61:24:84:64:4f:c5:
+    c3:26:fd:b5:52:98:b1:1b:f0:d8:ee:b0:0a:da:ed:
+    f9:40:1b:50:1c:27:0e:bf:9b:ee:92:ae:a8:e8:2c:
+    48:b9:9b:21:f7:6f:7d:9b:28:13:4b:55:ee:24:3f:
+    5d:fa:5a:12:26:a8:c1:57:17:51:c1:30:27:5f:f7:
+    f4:1b:be:6b:a0:63:40:c1:b9:32:01:61:19:5d:9e:
+    24:88:ce:00:00:24:05:55:15:12:6d:7f:6f:b4:c1:
+    99:41:5c:25:3b:70:01:80:98:c6:f9:c6:75:6d:02:
+    91:37:aa:d2:6a:36:79:79:fe:a9:26:c0:72:31:65:
+    58:ed:cf:cb:3a:98:05:8c:07:b3:3a:61:90:28:2d:
+    14:95:3b:fe:75:0c:c8:aa:f8:dc:05:05:0f:16:f0:
+    9f:b4:ca:f6:31:9d:d6:93:4f:18:39:8f:5d:44:27:
+    8c:38:55:15:8f:f7:25:bf:ab:a5:57:90:7c:22:84:
+    42:a5
+publicExponent: 65537 (0x10001)
+privateExponent:
+    4d:c8:c0:3f:55:d3:be:7a:77:36:da:eb:66:da:02:
+    56:20:c8:b7:8e:19:03:35:77:c5:38:e3:21:c5:3f:
+    be:02:ce:4d:fc:1e:1e:d2:b7:ff:c7:95:ec:05:e2:
+    9f:08:36:44:dd:24:f6:82:78:26:34:a1:86:ba:8c:
+    59:fa:b4:8e:8d:4f:bb:06:a6:ce:b1:b3:8b:97:c2:
+    98:17:32:1a:32:0f:19:32:d1:74:0c:0c:e5:1d:87:
+    e7:16:d4:9a:d7:9f:54:f6:ad:19:d3:ca:80:c2:26:
+    b5:33:84:34:5a:57:2b:0c:86:be:11:01:da:1e:cb:
+    ad:02:96:0e:59:e7:a6:22:ef:9b:31:6d:08:f6:b1:
+    fe:b6:5b:98:25:2b:1f:bf:9f:d8:ca:0b:55:48:26:
+    a2:19:e8:9d:dc:60:98:bb:11:ff:ba:c2:ac:56:9a:
+    b3:36:89:78:12:4b:da:e2:bd:d0:32:db:b9:35:65:
+    06:6f:b4:e6:39:ef:9e:27:b2:4b:e4:e1:e8:0a:de:
+    a6:19:6f:91:4c:34:49:23:14:bf:89:a7:88:ce:ed:
+    b3:fd:6d:3c:90:2f:0e:ee:25:d7:ac:2a:11:28:a4:
+    73:18:6b:e6:ef:1a:d7:14:12:f0:ab:74:e3:76:aa:
+    0b:02:d7:1c:c6:b0:f6:d8:c6:33:e7:4d:6d:f6:89:
+    01
+prime1:
+    00:f0:b1:c4:3e:71:ed:f7:d5:16:00:f8:2f:75:71:
+    e4:69:74:7e:cd:e2:36:28:e9:7d:b3:0f:a0:67:9b:
+    1b:d4:c8:97:75:29:db:3b:92:fc:cc:4c:1d:2c:96:
+    6e:a2:27:d8:30:91:41:c5:96:b7:b7:ce:95:9c:f4:
+    f2:a7:d6:7b:da:93:a6:7d:78:13:96:d5:d1:54:77:
+    53:40:3e:e1:69:a3:3a:04:c2:42:f2:f5:88:b8:38:
+    e5:05:8e:d9:36:0a:95:1c:dd:24:99:a1:c5:d9:08:
+    08:17:90:ea:31:7a:72:f4:29:60:f4:70:83:7b:86:
+    14:e3:7f:e5:a3:96:01:53:85
+prime2:
+    00:dc:d0:c5:77:83:02:2d:43:76:be:74:bb:4c:50:
+    48:39:6a:fa:d0:c6:6a:8c:6f:d3:f9:33:45:98:f5:
+    ed:33:9b:23:b7:28:87:15:13:8d:e7:1e:48:e2:d4:
+    de:56:ea:e7:88:db:28:58:11:95:a1:a0:14:fc:e1:
+    8d:b3:2a:1e:09:fa:d2:1e:07:bd:70:3b:33:1b:09:
+    68:e1:f8:9e:6a:98:a6:57:8b:a0:59:3c:06:24:99:
+    0e:e3:44:40:63:c8:9f:6e:1e:44:38:be:b0:0a:53:
+    0d:03:51:f0:3e:2b:76:db:39:e0:f1:ba:f2:7d:50:
+    87:60:da:4c:c4:c4:9a:8c:a1
+exponent1:
+    00:c2:ec:13:b3:46:6c:a3:32:0b:d9:c9:24:16:06:
+    a0:25:ce:d4:0a:43:d1:fc:9b:ea:d2:22:2b:92:fc:
+    08:33:f0:26:c8:19:97:93:cd:5b:b0:cf:4b:29:1a:
+    c2:89:cb:9e:c6:e6:3b:cf:9a:59:3a:1f:b1:06:25:
+    50:86:1f:aa:b9:be:ad:2c:1b:1c:32:21:02:9f:56:
+    eb:32:b2:39:b6:65:1b:cd:52:cd:09:19:53:19:6d:
+    e9:fa:f0:4e:73:f7:69:fe:b0:10:bd:e2:46:e9:96:
+    19:87:8c:32:3c:d3:9f:58:a0:52:06:63:3f:f7:bf:
+    04:17:a1:32:05:a2:ab:7c:49
+exponent2:
+    5a:79:1f:af:4b:fa:44:59:73:f9:ad:12:60:be:34:
+    19:72:7f:b9:b2:d2:4d:20:34:95:d2:30:1d:f0:05:
+    74:33:88:7a:af:1c:49:c2:6d:4d:d8:d6:bc:39:c3:
+    af:91:27:b4:a7:36:ec:7e:a7:f4:45:06:d4:66:06:
+    0c:f6:a0:c0:2e:08:91:4d:52:8c:fd:74:7f:0b:67:
+    f1:ce:4f:fa:14:f9:72:bd:3e:c1:d1:1a:23:3c:a3:
+    20:f3:01:fe:e0:60:92:59:cc:52:03:af:55:4b:99:
+    f5:56:49:3c:ef:ca:0f:20:b3:cd:d7:6f:2b:71:27:
+    46:c3:aa:d8:a4:45:3e:81
+coefficient:
+    6c:ff:5f:8a:99:30:f7:90:1b:81:8d:34:8f:a5:cf:
+    cb:1b:c3:61:70:9e:73:1a:33:2b:00:97:c8:1f:ef:
+    59:49:96:61:3c:7c:cb:a9:eb:ae:f8:f0:bd:da:c7:
+    f8:65:f3:7a:0f:e6:92:b8:d2:4e:cc:5a:c2:8d:8b:
+    ca:61:e2:54:81:bd:02:72:13:f4:2e:15:e1:05:82:
+    b6:a1:f8:82:11:2a:44:40:b4:dc:c1:9c:9f:68:bf:
+    ce:c5:9f:ab:2c:06:fc:0c:b0:4e:98:05:97:d7:84:
+    ab:74:8f:d8:74:84:09:c8:32:8e:7a:b6:b3:e0:68:
+    bd:77:b9:9f:4c:dd:b2:24
+mac@MacBook-Pro-de-Mac PKI % openssl -in clekhalipha.pem -pubout -out clepubkhalipha.pem
+openssl:Error: '-in' is an invalid command.
+
+Standard commands
+asn1parse         ca                certhash          ciphers           
+crl               crl2pkcs7         dgst              dh                
+dhparam           dsa               dsaparam          ec                
+ecparam           enc               errstr            gendh             
+gendsa            genpkey           genrsa            nseq              
+ocsp              passwd            pkcs12            pkcs7             
+pkcs8             pkey              pkeyparam         pkeyutl           
+prime             rand              req               rsa               
+rsautl            s_client          s_server          s_time            
+sess_id           smime             speed             spkac             
+ts                verify            version           x509              
+
+Message Digest commands (see the `dgst' command for more details)
+gost-mac          md4               md5               md_gost94         
+ripemd160         sha1              sha224            sha256            
+sha384            sha512            streebog256       streebog512       
+whirlpool         
+
+Cipher commands (see the `enc' command for more details)
+aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb       
+aes-256-cbc       aes-256-ecb       base64            bf                
+bf-cbc            bf-cfb            bf-ecb            bf-ofb            
+camellia-128-cbc  camellia-128-ecb  camellia-192-cbc  camellia-192-ecb  
+camellia-256-cbc  camellia-256-ecb  cast              cast-cbc          
+cast5-cbc         cast5-cfb         cast5-ecb         cast5-ofb         
+chacha            des               des-cbc           des-cfb           
+des-ecb           des-ede           des-ede-cbc       des-ede-cfb       
+des-ede-ofb       des-ede3          des-ede3-cbc      des-ede3-cfb      
+des-ede3-ofb      des-ofb           des3              desx              
+rc2               rc2-40-cbc        rc2-64-cbc        rc2-cbc           
+rc2-cfb           rc2-ecb           rc2-ofb           rc4               
+rc4-40            
+
+mac@MacBook-Pro-de-Mac PKI % openssl rsa -in clekhalipha.pem -pubout -out clepubkhalipha.pem
+writing RSA key
+mac@MacBook-Pro-de-Mac PKI % ls
+clekhalipha.pem
+clepubkhalipha.pem
+mac@MacBook-Pro-de-Mac PKI % openssl rsa -pubin -in clepubkhalipha.pem -text -noout
+Public-Key: (2048 bit)
+Modulus:
+    00:cf:9d:0e:be:46:78:5c:65:bb:d3:e6:40:1e:15:
+    52:b8:a7:f8:bf:3d:ff:b8:c0:f4:29:cb:54:df:de:
+    fc:77:e2:44:b1:d9:e2:36:59:5c:01:14:79:3a:bc:
+    f2:59:fc:2d:42:93:06:90:94:f3:e4:5b:be:fa:0e:
+    d6:47:d8:9d:bc:d5:97:08:d8:61:24:84:64:4f:c5:
+    c3:26:fd:b5:52:98:b1:1b:f0:d8:ee:b0:0a:da:ed:
+    f9:40:1b:50:1c:27:0e:bf:9b:ee:92:ae:a8:e8:2c:
+    48:b9:9b:21:f7:6f:7d:9b:28:13:4b:55:ee:24:3f:
+    5d:fa:5a:12:26:a8:c1:57:17:51:c1:30:27:5f:f7:
+    f4:1b:be:6b:a0:63:40:c1:b9:32:01:61:19:5d:9e:
+    24:88:ce:00:00:24:05:55:15:12:6d:7f:6f:b4:c1:
+    99:41:5c:25:3b:70:01:80:98:c6:f9:c6:75:6d:02:
+    91:37:aa:d2:6a:36:79:79:fe:a9:26:c0:72:31:65:
+    58:ed:cf:cb:3a:98:05:8c:07:b3:3a:61:90:28:2d:
+    14:95:3b:fe:75:0c:c8:aa:f8:dc:05:05:0f:16:f0:
+    9f:b4:ca:f6:31:9d:d6:93:4f:18:39:8f:5d:44:27:
+    8c:38:55:15:8f:f7:25:bf:ab:a5:57:90:7c:22:84:
+    42:a5
+Exponent: 65537 (0x10001)
+mac@MacBook-Pro-de-Mac PKI % vi msg.txt
+mac@MacBook-Pro-de-Mac PKI % openssl rsautl-encrypt -in msg.txt -pubin -inkey clepubkhalipha.pem -out chiffrement.txt
+openssl:Error: 'rsautl-encrypt' is an invalid command.
+
+Standard commands
+asn1parse         ca                certhash          ciphers           
+crl               crl2pkcs7         dgst              dh                
+dhparam           dsa               dsaparam          ec                
+ecparam           enc               errstr            gendh             
+gendsa            genpkey           genrsa            nseq              
+ocsp              passwd            pkcs12            pkcs7             
+pkcs8             pkey              pkeyparam         pkeyutl           
+prime             rand              req               rsa               
+rsautl            s_client          s_server          s_time            
+sess_id           smime             speed             spkac             
+ts                verify            version           x509              
+
+Message Digest commands (see the `dgst' command for more details)
+gost-mac          md4               md5               md_gost94         
+ripemd160         sha1              sha224            sha256            
+sha384            sha512            streebog256       streebog512       
+whirlpool         
+
+Cipher commands (see the `enc' command for more details)
+aes-128-cbc       aes-128-ecb       aes-192-cbc       aes-192-ecb       
+aes-256-cbc       aes-256-ecb       base64            bf                
+bf-cbc            bf-cfb            bf-ecb            bf-ofb            
+camellia-128-cbc  camellia-128-ecb  camellia-192-cbc  camellia-192-ecb  
+camellia-256-cbc  camellia-256-ecb  cast              cast-cbc          
+cast5-cbc         cast5-cfb         cast5-ecb         cast5-ofb         
+chacha            des               des-cbc           des-cfb           
+des-ecb           des-ede           des-ede-cbc       des-ede-cfb       
+des-ede-ofb       des-ede3          des-ede3-cbc      des-ede3-cfb      
+des-ede3-ofb      des-ofb           des3              desx              
+rc2               rc2-40-cbc        rc2-64-cbc        rc2-cbc           
+rc2-cfb           rc2-ecb           rc2-ofb           rc4               
+rc4-40            
+
+mac@MacBook-Pro-de-Mac PKI % openssl rsautl -encrypt -in msg.txt -pubin -inkey clepubkhalipha.pem -out chiffrement.txt
+mac@MacBook-Pro-de-Mac PKI % ls
+chiffrement.txt
+clekhalipha.pem
+clepubkhalipha.pem
+msg.txt
+mac@MacBook-Pro-de-Mac PKI % openssl rsautl -decrypt -in chiffrement.txt -inkey clekhalipha.pem -out dechiffrement.txt
+mac@MacBook-Pro-de-Mac PKI % vi dechiffrement.txt
+mac@MacBook-Pro-de-Mac PKI % 
+
